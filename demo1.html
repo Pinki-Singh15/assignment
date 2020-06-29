@@ -1,0 +1,74 @@
+<html>
+<head>
+<center>
+<h2> cards </h2>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+</style>
+</head>
+<body>
+
+<h2>Card</h2>
+
+<div class="card">
+  <img src="mango.jpg" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>mango</b></h4> 
+    <p>mango is seasonal fruit</p> 
+  </div>
+</div>
+</head>
+
+
+to add data
+<form id="submitform">
+<input type="text" id="name">name<br>
+<input type="text" id="img">imagaurl<br>
+<input type="text" id="description">description<br>
+
+<button id="submit">submit</button>
+</form>
+</center>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCpgtvnhWX1YTegfqR5Jvb7EFpa1O6_1hQ",
+    authDomain: "proj-7c6e8.firebaseapp.com",
+    databaseURL: "https://proj-7c6e8.firebaseio.com",
+    projectId: "proj-7c6e8",
+    storageBucket: "proj-7c6e8.appspot.com",
+    messagingSenderId: "761332952921",
+    appId: "1:761332952921:web:50bba71deba530d7b9a648",
+    measurementId: "G-QENMG8J69X"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<script src="connect.js"></script>
+
+</body>
+
+</html>
